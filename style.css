@@ -3,6 +3,8 @@
     height: 200px;
     border-style: solid;
     border-color: black;
+    background-image: url(img/door.webp);
+    
 }
 .grid {
     display: flex;
@@ -11,8 +13,32 @@
     align-items: center;
     width: 618px;
     height: 618px;
+    margin-left: 80px;
 }
 .gremlin {
     background-image: url(img/Stripe.jpg);
     background-size: cover;
 }
+body {
+    background-image: url(img/background.webp);
+    background-repeat: no-repeat;
+}
+.box h2 {
+    color: red;
+    text-align: center;
+    font-family: fantasy;
+    
+    
+    
+    
+}
+.box {
+    box-sizing: border-box;
+    background-color: white;
+    width:  600px;
+    height: 200px;
+    margin-top: 60px;
+    margin-left: 85px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px lightblue;
