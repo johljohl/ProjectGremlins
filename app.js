@@ -4,6 +4,7 @@ const timeleft = document.querySelector('#time-left')
 let score = document.querySelector('#score')
 
 let result = 0
+let currentTime = timeleft.textContent
 
 function randomSquare() {
     square.forEach(className => {
@@ -32,3 +33,15 @@ function moveGremlin() {
 }
 
 moveGremlin()
+
+function countDown() {
+    currentTime--
+    timeleft.textContent = currentTime
+
+    if(currentTime === 0 ) {
+        clearInterval(timerId)
+        alert('GAME OVER! Your final score is' + result)
+    }
+}
+
+let timerId = setInterval(countDown, 1000)
