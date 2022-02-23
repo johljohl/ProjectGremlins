@@ -26,7 +26,8 @@ body {
 .box h2 {
     color: red;
     text-align: center;
-    font-family: fantasy;
+    font-family: gremlins;
+    font-size: 28px;
     
     
     
@@ -42,3 +43,10 @@ body {
     margin-bottom: 25px;
     border-radius: 10px;
     box-shadow: 10px 5px 5px lightblue;
+
+    }
+
+    @font-face {
+        font-family: gremlins;
+        src: url(font/GREMLINS.TTF);
+    }
