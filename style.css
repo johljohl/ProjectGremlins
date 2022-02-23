@@ -50,3 +50,6 @@ body {
         font-family: gremlins;
         src: url(font/GREMLINS.TTF);
     }
+div {
+        cursor: grabbing;
+    }

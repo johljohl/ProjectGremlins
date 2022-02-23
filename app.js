@@ -5,6 +5,7 @@ let score = document.querySelector('#score')
 
 let result = 0
 let currentTime = timeleft.textContent
+let mySound = new Audio ('sound/punch.mp3')
 
 function randomSquare() {
     square.forEach(className => {
@@ -20,6 +21,7 @@ function randomSquare() {
 square.forEach(id => {
     id.addEventListener('mouseup' , () => {
         if (id.id === hitPosition){
+            mySound.play();
             result = result + 1
             score.textContent = result
         }
